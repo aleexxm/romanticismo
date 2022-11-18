@@ -1,0 +1,81 @@
+/************************************************************/
+/* Web del romanticismo                                     */
+/* Hoja de estilo de autores                                */
+/* Autor: Pablo Alejandro Moreno Postigo                   */
+/* Versión: 1.0                                             */
+/* 21 de octubre de 2022                                    */
+/************************************************************/
+
+/* ESTILO GENERAL                                           */
+
+@font-face {
+    src: url('../fonts/Right\ Moment\ .otf');
+    font-family: titulos;
+}
+
+@font-face {
+    src: url('../fonts/BreeSerif-Regular.ttf');
+    font-family: textos;
+}
+ 
+*{box-sizing:border-box} 
+
+body{
+
+    /*margin: 0; padding: 0; /*para quitar fondillo por defecto del navegador */
+    font-family: textos;
+    text-indent: 0em;
+    background-color: rgb(253, 177, 105);
+}
+
+#wrapper {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%
+}   
+
+#limpiar {clear:both}
+    
+
+
+h1 {text-decoration:underline;
+    border-bottom: 2px solid orangered;
+
+}
+h1,h2,h3 {
+        font-family: titulos;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 50px;
+        width:85%;
+}
+
+#espronceda { 
+
+            float:left; /* para que la imagen tenga texto alrededor */
+            padding: 2px;
+            padding-top: 35px;
+            margin-right: 30px;
+            margin-bottom: 50px;
+            width: 25%;
+        
+}
+
+
+p {text-align: justify;
+
+
+
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (width<=850px){
+    #espronceda{width:50%;}
+}
+@media only screen and (width<=500px){
+    #espronceda{width:100%;}
+}

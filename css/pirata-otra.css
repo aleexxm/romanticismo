@@ -1,0 +1,30 @@
+/*************************************************************************/
+/*Web del pirata
+*Hoja de estilos de la Canción del Pirata
+*Autor: Alejandro Moreno
+*Versión 2.0
+*9 de Noviembre de 2022*/
+/**************************************************************************/
+/*ESTILO GENERAL*/
+@font-face {
+   font-family: escritura;
+   src: url('../fonts/Sweet\ &\ sassy\ serif.ttf');
+}
+
+body {font-family: escritura;
+    /*vamos a colocar una foto sola de fondo*/
+    background-image: url('../imagenes/espronceda/pqco.jpg');
+    /*para que no se repita la misma imagen (mosaico)*/
+    background-repeat: no-repeat;
+    /*para que cubra todo el fondo*/
+    background-size:cover;
+    height: 100vh;
+}
+#poema {margin: right 30%;}
+
+@media only screen and (width<=600px){
+    #poema {color: white}
+
+
+}
+#sigueme {font-size: 100px}

@@ -1,0 +1,125 @@
+/***********************************************************/
+/* Web del Romanticismo                                    */
+/* Hoja de estilo para index                           */
+/* autora: Wachi Wachi                                     */
+/* versión: 1.0                                            */
+/* 21 de Octubre de 2022                                   */
+/***********************************************************/
+
+/* ESTILO GENERAL                                          */
+
+@font-face {
+    font-family: titulos;
+    src: url('../fonts/Tokyo.otf');
+}
+
+@font-face {
+    font-family: texto;
+    src: url('../fonts/BreeSerif-Regular.ttf');
+}
+
+body {font-family: texto;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+
+* {box-sizing: border-box;}
+
+#wrapper {width: 80%;
+    background-color: white;
+    margin: auto;
+}
+
+/************************************ HERO SECTION VERSION 1 ***********************************/
+
+#hero {background-image: url(../imagenes/herosection/Joseph_Mallord_William_Turner_-_Bell_Rock_Lighthouse_-_Google_Art_Project.jpg);
+        height: 100vh; /*para obligar a que se vea mas alla del contenido*/
+        background-repeat: no-repeat; /* no la repitas */
+        background-size: cover; /*cubre todo el fondo*/
+        background-position: 33%; /*fija lo que hay en el medio*/
+        
+        
+        
+        
+
+
+}
+
+
+#titulo {background-color: rgba(255,255,255,0.5);
+    font-family: titulos;
+    font-size: 3rem;
+    padding-left: 5%;
+    padding-top: 25%;
+    width: 30%;
+    padding: 2%;
+    text-align: center;
+    border-radius: 43%;
+}
+   
+/******************************* HERO 2 : HAIKEI APP + POSITION***********************************/
+
+#hero2 {background-image: url('../imagenes/waves.svg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position:relative /* el hero se mueve de sitio si se mueve el contenido */
+
+    
+}
+
+#titulo2 {font-family: titulos;
+          font-size: 3rem;
+          background-color: rgba(0, 247, 234, 0.445);
+          width: 50%;
+          text-align: center; /*podría haber sido un padding*/
+          /*estas cuatro reglas colocan una caja dentro de otra */
+          position: absolute; /*está fijo DENTRO del hero */
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%); 
+          
+/*para el efecto frosted glass (fondo debe ser blanco 
+    y con opacidad por debajo de 0.5)*/
+
+          backdrop-filter: blur(100px);
+          
+
+
+} 
+
+
+#hero3 {background-color: aquamarine; /* el mismo color que la ola */
+        height: 50vh;
+
+        position:relative
+}
+
+#titulo3 {font-family: titulos;
+         font-size: 4rem;
+         color: white;
+
+         position:absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+
+}
+
+#intro {background-color: black;
+    
+}
+
+/* MEDIA QUERIS */
+
+@media only screen and (width<= 900px){
+    #wrapper {width: 60%;}
+    #titulo {font-size: 2rem;
+            width: 50%;}
+}
+
+@media only screen and (width<= 600px){
+    #wrapper {width: 100%;}
+}
